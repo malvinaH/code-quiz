@@ -14,57 +14,58 @@
 
         <header id="scoring__time-container">
             <p>View High Scores</p>
-            <p>Time: <span id="timer">0</span></p>
+            <p>Time: <span id="timer__txt">0</span></p>
         </header>
 
-        <section id="main__opening-container">
+        <section id="opening__container">
             <h1>Coding Quiz Challenge</h1>
             <p>Answer the following code related questions within the time limit. Your score is the remianing time on the clock.
                 Keep in mind that incorrect answers will penalize your time/score by 10 seconds!</p>
-            <button id="start__quiz-button">Start Quiz</button>
+            <button id="start__btn">Start Quiz</button>
         </section>
-        <section id="questions">
-            <pre id="question__content">
+        <section id="questions__container">
+            <pre id="question__txt">
                 What keyword is used to check whether a given property is valid or not?
             </pre>
-            <ol id="multiple__answers">
+            <ol id="multiple__answers-li">
                 <li id="li0">in</li>
                 <li id="li1">is in</li>
                 <li id="li2">exists</li>
                 <li id="li3">lies</li>
             </ol>
         </section>
-        <section id="conclusion-container">
+        <section id="conclusion__container">
             <h2>All Done!</h2>
-            <p>Your final score is <span id="final__score">22</span>.</p>
+            <p>Your final score is <span id="final__score-txt">22</span>.</p>
             <form id="initials__submit-form" action="submit__form">
-                <label for="enter__initials">Enter your initials: </label>
+                <label for="initials__txt">Enter your initials: </label>
                 <input type="text"
-                        name="initials__text"
-                        id="initials"
+                        name="initials"
+                        id="initials__txt"
                         required
                         placeholder="Your initials">
-                <button id="submit" >Submit</button>
+                <button id="submit__btn" >Submit</button>
             </form>
         </section>
         <section id="high__scores-container">
             <h2>High Scores</h2>
-            <ol id="high__scores-list">
+            <ol id="high__scores-li">
                 <li>XY - 45</li>
                 <li>ZY - 87</li>
                 <li>XZ - 122</li>
             </ol>
-            <button id="go__back-button">Go Back</button>
-            <button id="clear__scores-button">Clear High Scores</button>
+            <button id="go__back-btn">Go Back</button>
+            <button id="clear__scores-btn">Clear High Scores</button>
         </section>
 
         <footer id="result__container">
             <hr>
-            <p id="result_text"></p>
+            <p id="result_txt"></p>
         </footer>
     </main>
 
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/questions.js"></script>
 
 </body>
 
